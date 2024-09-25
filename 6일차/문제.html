@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // *문제
+        // 1.객체 하나 제작 
+        // 2.주제는 유저 정보를 저장하는 객체 
+        // 3.객체 속성은 username, email, profileImg 사용
+        // 4.속성에 맞게 속성값 지정 
+
+        // **출력결과**
+        // ##유저정보##
+        // 유저 아이디: JavaScript
+        // 이메일: java@script.com
+        // profileImg: js.jpg
+
+        // =>write를 사용할것
+        // =>h2 태그도 사용할것 
+
+        // const user = {
+        //     id: 0,
+        //     username: "javaScript",
+        //     email: "java@naver.com",
+        //     profileImg: "js.jpg"
+        // }
+
+        // document.write(`<h2>##유저정보##</h2>`);
+        // document.write(`<h2>유저 아이디: ${user.username}</h2>`);
+        // document.write(`<h2>이메일: ${user.email}</h2>`);
+        // document.write(`<h2>profileImg: ${user.profileImg}</h2>`);
+
+
+        // *문제2
+        // =>prompt를 사용하여 자기 소개 출력 
+        // =>객체, 메서드, this 활용 
+
+        // ##출력결과##
+        // 이름: 이정환
+        // 주 언어: 영어
+        // 취미: 영어
+
+        // const name = prompt("이름을 입력해주세염");
+        // const language = prompt("언어를 입력해주세염");
+        // const hoddy = prompt("취미를 입력해주세염");
+
+        // const user = {
+        //     id:0,
+        //     name: name,
+        //     lan: language,
+        //     hoddy: hoddy,
+        //     userIntro: function(){
+        //         document.write(`이름: ${this.name} <br>`);
+        //         document.write(`언어: ${this.lan} <br>`);
+        //         document.write(`취미: ${this.hoddy} <br>`);
+        //     }
+        // }
+
+        // user.userIntro();
+
+        
+        
+
+        // *문제
+        // =>위 객체를 이용하여 
+        // 로그인 구현
+        // =>입력한 값이 저장된 아이디랑 다르면 아이디 틀림
+        // =>입력한 값이 저장된 패스워드랑 다르면 패스워드 틀림
+        // =>둘다 맞으면 로그인 되었습니다 라고 출력 
+
+        // ***********************
+        // 리턴 설명
+        // ***********************
+
+        const userInfo = {
+            id:0, 
+            username: "test",
+            password: "123"
+        }
+
+        const userNameInput = prompt("아이디를 입력해주세요");
+        const passwordInput = prompt("패스워드를 입력해주세요");
+
+        if(userNameInput !== userInfo.username){
+            document.write("아이디가 틀렸습니다");
+        }else if(passwordInput !== userInfo.password){
+            document.write("패스워드가 틀렸습니다");
+        }else{
+            alert("로그인 되었습니다");
+            document.write(`${userInfo.username}님 환영합니다`);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

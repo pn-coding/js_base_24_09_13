@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 300px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    <div class="con"></div>
+    
+    <script>
+
+        
+        // 1.컨텐츠 선택하기 
+        // 2.컨텐츠 안에 h3 넣기
+        // 3.h3 숫자 1 ~ 10까지 만들기 
+
+        // *필요 도구
+        // =>document.querySelectorAll()
+        // => innerHTML, for 
+
+        const conAll = document.querySelectorAll('.con');
+        
+        for(let i = 0; i < conAll.length; i++){
+            conAll[i].innerHTML = `<h3>${i + 1}</h3>`;
+        }
+
+
+    </script>
+</body>
+</html>
